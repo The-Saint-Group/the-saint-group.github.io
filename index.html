@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru" style="scroll-behavior: auto !important;">
+<head>
+    <script>
+        window.scrollTo(0, 0);
+        document.documentElement.style.overflow = 'hidden';
+        document.body.style.overflow = 'hidden';
+        
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.documentElement.style.overflow = '';
+                document.body.style.overflow = '';
+                window.scrollTo(0, 0);
+            }, 0);
+        });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="theme-color" content="#0f172a">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>The Saint Group - Команда разработчиков из Санкт-Петербурга</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preload" as="image" href="images/back-photo.png"> 
+    <link rel="icon" href="images/prog.ico">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="hero">
+                <h1>The Saint Group</h1>
+                <div class="scroll-down">
+                    <span data-translate="hero.scroll">узнать больше</span>
+                    <a href="#about" class="scroll-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 data-translate="about.title">О нас</h2>
+            <div class="about-content">
+                <p data-translate="about.text">The Saint Group — команда, которая участвует в различных технологических проектах, стартапах, соревнованиях</p>
+                
+                <div class="positions-section">
+                    <h3 data-translate="about.positions.title">Кого мы ищем?</h3>
+                    <p data-translate="about.positions.intro">Мы постоянно растём и ищем в команду тех, кто разделяет нашу страсть к технологиям и стремление к совершенству</p>
+                    
+                    <div class="positions-grid">
+                        <div class="position-card priority-card">
+                            <h4 data-translate="position.ctf.title">CTF-игрок</h4>
+                            <p data-translate="position.ctf.desc">Участие в CTF-соревнованиях, решение криптографических задач, реверс-инжиниринг, веб-эксплуатация. Опыт участия в соревнованиях приветствуется.</p>
+                            <div class="position-meta">
+                                <span><i class="fas fa-flag"></i> <span data-translate="position.ctf.exp">Опыт участия в CTF</span></span>
+                                <span><i class="fas fa-trophy"></i> <span data-translate="position.priority">Приоритетное</span></span>
+                            </div>
+                        </div>
+                        
+                        <div class="position-card priority-card">
+                            <h4 data-translate="position.analyst.title">Аналитик данных</h4>
+                            <p data-translate="position.analyst.desc">Анализ больших данных, построение предсказательных моделей, визуализация данных. Опыт работы с Python, SQL, библиотеками для анализа данных.</p>
+                            <div class="position-meta">
+                                <span><i class="fas fa-chart-line"></i> <span data-translate="position.analyst.exp">Python/SQL</span></span>
+                                <span><i class="fas fa-trophy"></i> <span data-translate="position.priority">Приоритетное</span></span>
+                            </div>
+                        </div>
+                        
+                        <div class="position-card priority-card">
+                            <h4 data-translate="position.fullstack.title">Fullstack-разработчик (соревнования)</h4>
+                            <p data-translate="position.fullstack.desc">Разработка решений для хакатонов и соревнований. Быстрое прототипирование, работа с различными стеками технологий.</p>
+                            <div class="position-meta">
+                                <span><i class="fas fa-code"></i> <span data-translate="position.fullstack.exp">JavaScript/Python</span></span>
+                                <span><i class="fas fa-trophy"></i> <span data-translate="position.priority">Приоритетное</span></span>
+                            </div>
+                        </div>
+                        
+                        <div class="position-card">
+                            <h4 data-translate="position.fullstack2.title">Fullstack-разработчик</h4>
+                            <p data-translate="position.fullstack2.desc">Опыт от 2 лет. Разработка и поддержка веб-приложений на стеке JavaScript/TypeScript, Node.js, React/Vue.js.</p>
+                            <div class="position-meta">
+                                <span><i class="fas fa-laptop-code"></i> <span data-translate="position.exp">Опыт</span> 2+ <span data-translate="position.exp">года</span></span>
+                                <span><i class="fas fa-map-marker-alt"></i> <span data-translate="position.location">СПб/Удаленно</span></span>
+                            </div>
+                        </div>
+                        
+                        <div class="position-card">
+                            <h4 data-translate="position.frontend.title">Frontend-разработчик</h4>
+                            <p data-translate="position.frontend.desc">Глубокое знание современных фреймворков (React/Vue.js), опыт работы с TypeScript, Redux/Vuex.</p>
+                            <div class="position-meta">
+                                <span><i class="fas fa-laptop-code"></i> <span data-translate="position.exp">Опыт</span> 1.5+ <span data-translate="position.exp">года</span></span>
+                                <span><i class="fas fa-map-marker-alt"></i> <span data-translate="position.location">СПб/Удаленно</span></span>
+                            </div>
+                        </div>
+                        
+                        <div class="position-card">
+                            <h4 data-translate="position.backend.title">Backend-разработчик</h4>
+                            <p data-translate="position.backend.desc">Опыт работы с микросервисной архитектурой, базами данных, асинхронным программированием.</p>
+                            <div class="position-meta">
+                                <span><i class="fas fa-laptop-code"></i> <span data-translate="position.exp">Опыт</span> 2+ <span data-translate="position.exp">года</span></span>
+                                <span><i class="fas fa-map-marker-alt"></i> <span data-translate="position.location">СПб/Удаленно</span></span>
+                            </div>
+                        </div>
+                        
+                        <div class="position-card">
+                            <h4 data-translate="position.devops.title">DevOps-инженер</h4>
+                            <p data-translate="position.devops.desc">Настройка CI/CD, работа с облачными платформами, контейнеризация и оркестрация.</p>
+                            <div class="position-meta">
+                                <span><i class="fas fa-laptop-code"></i> <span data-translate="position.exp">Опыт</span> 2+ <span data-translate="position.exp">года</span></span>
+                                <span><i class="fas fa-map-marker-alt"></i> <span data-translate="position.location">СПб/Удаленно</span></span>
+                            </div>
+                        </div>
+                        
+                        <div class="position-card">
+                            <h4 data-translate="position.qa.title">QA-инженер</h4>
+                            <p data-translate="position.qa.desc">Ручное и автоматизированное тестирование, написание тест-кейсов, работа с инструментами автоматизации.</p>
+                            <div class="position-meta">
+                                <span><i class="fas fa-laptop-code"></i> <span data-translate="position.exp">Опыт</span> 1+ <span data-translate="position.exp">год</span></span>
+                                <span><i class="fas fa-map-marker-alt"></i> <span data-translate="position.location">СПб/Удаленно</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p style="margin-top: 3rem; text-align: center;" data-translate="about.positions.cta">Если вы хотите работать в дружной команде над интересными проектами, развиваться профессионально и влиять на развитие продуктов — давайте знакомиться!</p>
+                </div>
+                
+                <div class="contacts-section">
+                    <h3 data-translate="social.title">Присоединяйтесь к нам</h3>
+                    <p data-translate="social.subtitle">Следите за нашими обновлениями и участвуйте в обсуждениях</p>
+                    
+                    <div class="social-grid">
+                        <a href="#" target="_blank" class="social-card telegram">
+                            <div class="social-icon">
+                                <i class="fab fa-telegram"></i>
+                            </div>
+                            <div class="social-content telegram">
+                                <h4 data-translate="social.telegram.title">Telegram</h4>
+                                <p data-translate="social.telegram.desc">Присоединяйтесь к нашему каналу</p>
+                                <span class="social-handle telegram" data-translate="social.telegram.handle">@</span>
+                            </div>
+                        </a>
+                        
+                        <a href="#" target="_blank" class="social-card discord">
+                            <div class="social-icon">
+                                <i class="fab fa-discord"></i>
+                            </div>
+                            <div class="social-content">
+                                <h4 data-translate="social.discord.title">Discord</h4>
+                                <p data-translate="social.discord.desc">Общайтесь с командой</p>
+                                <span class="social-handle" data-translate="social.discord.handle">discord.gg</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">The Saint Group</div>
+                <p data-translate="footer.copyright">© 2025 The Saint Group. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="language-switcher">
+        <button class="lang-btn active" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        window.onload = function() {
+            window.scrollTo(0, 0);
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        };
+        window.onpageshow = function(event) {
+            if (event.persisted) {
+                window.scrollTo(0, 0);
+            }
+        };
+    </script>
+</body>
+</html>
