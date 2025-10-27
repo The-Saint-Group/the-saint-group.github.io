@@ -40,6 +40,17 @@ body {
     transition: background-image 0.5s ease-in-out;
 }
 
+@media (max-width: 768px) {
+    body {
+        background: #000000 !important;
+        background-image: none !important;
+    }
+    
+    body::before {
+        background: transparent !important; 
+    }
+}
+
 body::before {
     content: '';
     position: fixed;
